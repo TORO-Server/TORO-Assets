@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Vertical Rainbow Gradient (Curved) -->
+    <radialGradient id="rainbow" cx="512" cy="512" r="750" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF0000" />
+      <stop offset="25%" stop-color="#FF0000" />
+      <stop offset="45%" stop-color="#FF7F00" />
+      <stop offset="55%" stop-color="#FFFF00" />
+      <stop offset="65%" stop-color="#00FF00" />
+      <stop offset="75%" stop-color="#0000FF" />
+      <stop offset="85%" stop-color="#8B00FF" />
+    </radialGradient>
+    
+    <!-- Clip Paths for Left and Right halves -->
+    <clipPath id="clip-left">
+      <rect x="0" y="0" width="256" height="512" />
+    </clipPath>
+    <clipPath id="clip-right">
+      <rect x="256" y="0" width="256" height="512" />
+    </clipPath>
+
+    <!-- Shared Text Group to ensure perfect alignment -->
+    <g id="text-content" stroke="black" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+      <text x="50%" y="45%" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="normal" font-size="100" letter-spacing="2">LGBTORO</text>
+      <text x="50%" y="70%" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="normal" font-size="100" letter-spacing="2">Server</text>
+    </g>
+  </defs>
+
+  <!-- Backgrounds -->
+  <!-- Left Side: Rainbow -->
+  <rect x="0" y="0" width="256" height="512" fill="url(#rainbow)" />
+  <!-- Right Side: White -->
+  <rect x="256" y="0" width="256" height="512" fill="white" />
+
+  <!-- Text Layer 1: White Text (Visible only on Left/Rainbow side based on clip) -->
+  <use href="#text-content" fill="white" clip-path="url(#clip-left)" />
+
+  <!-- Text Layer 2: Black Text (Visible only on Right/White side based on clip) -->
+  <use href="#text-content" fill="black" clip-path="url(#clip-right)" />
+  
+</svg>
