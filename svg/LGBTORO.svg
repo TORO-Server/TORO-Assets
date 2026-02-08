@@ -22,7 +22,7 @@
     <!-- Shared Text Group to ensure perfect alignment -->
     <g id="text-content" stroke="black" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
       <text x="50%" y="45%" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="normal" font-size="100" letter-spacing="2">LGBTORO</text>
-      <text x="50%" y="70%" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="normal" font-size="100" letter-spacing="2">Server</text>
+      <text x="50%" y="72%" text-anchor="middle" font-family="'Times New Roman', serif" font-weight="normal" font-size="60" letter-spacing="2">Server</text>
     </g>
   </defs>
 
